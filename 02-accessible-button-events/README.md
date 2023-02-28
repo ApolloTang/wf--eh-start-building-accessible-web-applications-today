@@ -33,7 +33,7 @@ To fix this we add:
 
 ## \<div>'s onkeydown need to be explicite
 
-But we are not done yet.  For a `\<button>`, onclick handler will fire for both click and keydown:
+But we are not done yet.  For a `<button>`, onclick handler will fire for both click and keydown:
 
 ```HTML
 <button
@@ -45,7 +45,7 @@ But we are not done yet.  For a `\<button>`, onclick handler will fire for both 
 
 ```
 
-But for `\<div>`,  click handler only fire for click event, not on keydown event:
+But for `<div>`,  click handler only fire for click event, not on keydown event:
 
 ```HTML
 <div
