@@ -29,50 +29,52 @@ To fix this we add:
 >
 ```
 
+
+
 ## \<div>'s onkeydown need to be explicite
 
-But we are not done yet for a `\<button>`, onclick handler will fire for both click and keydown: 
+But we are not done yet.  For a `\<button>`, onclick handler will fire for both click and keydown:
 
 ```HTML
-    <button 
-	  aria-label="Help"
-      onclick="console.log('button: clicked or keydown')"
-    >
-      <i class="icon icon-help"></i>
-    </button>
+<button
+  aria-label="Help"
+  onclick="console.log('button: clicked or keydown')"
+>
+  <i class="icon icon-help"></i>
+</button>
 
 ```
 
 But for `\<div>`,  click handler only fire for click event, not on keydown event:
 
 ```HTML
-    <div
-      class="button"
-	  
-      role="button"
-      tabindex="0"
-      aria-label="Menu"
+<div
+  class="button"
 
-      onclick="console.log('div: click only (does not fire on keydown)')"
-    >
-      <i class="icon icon-menu"></i>
-    </div>
+  role="button"
+  tabindex="0"
+  aria-label="Menu"
+
+  onclick="console.log('div: click only (does not fire on keydown)')"
+>
+  <i class="icon icon-menu"></i>
+</div>
 ```
 
 So we need to explicitely add `onkeydown` handler:
 
 ```html
-    <div
-      class="button"
-	  
-      role="button"
-      tabindex="0"
-      aria-label="Menu"
+<div
+  class="button"
 
-      onclick="console.log('div: click only (does not fire on keydown)')"
-      onkeydown="console.log('div: onkeydown')"   // <--- fixed, need to explicitely add `onkeydown` handler
-    >
-      <i class="icon icon-menu"></i>
-    </div>
+  role="button"
+  tabindex="0"
+  aria-label="Menu"
+
+  onclick="console.log('div: click only (does not fire on keydown)')"
+  onkeydown="console.log('div: onkeydown')"   // <--- fixed, need to explicitely add `onkeydown` handler
+>
+  <i class="icon icon-menu"></i>
+</div>
 ```
 
