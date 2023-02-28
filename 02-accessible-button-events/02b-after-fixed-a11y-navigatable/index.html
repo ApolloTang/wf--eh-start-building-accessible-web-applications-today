@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Button Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body ng-app="demoApp" ng-controller="demoController">
+  <main>
+    <button 
+	  aria-label="Help"
+      onclick="console.log('button: clicked or keydown')"
+    >
+      <i class="icon icon-help"></i>
+    </button>
+
+    <div
+      class="button"
+	  
+      role="button"
+      tabindex="0"
+      aria-label="Menu"
+
+      onclick="console.log('div: click only (does not fire on keydown)')"
+    >
+      <i class="icon icon-menu"></i>
+    </div>
+  </main>
+</body>
+</html>
