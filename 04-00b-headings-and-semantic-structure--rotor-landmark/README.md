@@ -1,4 +1,11 @@
+# Rotor's Landmarks
 
+To get the Rotor's Landmark dialogue do this:
+
+1. Turn on VoiceOver: `Command-F5`
+2. In safari, navigate to [en.wikipedia.org/wiki/Main_Page](https://en.wikipedia.org/wiki/Main_Page)
+3. Press: `VO-U` to activate Rotor.
+4. Press: `LeftArrow` or `RightArrow` several time until you see the **Landmarks** menu:
 
 
 
