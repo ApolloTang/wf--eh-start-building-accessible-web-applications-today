@@ -1,6 +1,6 @@
-# Rotor's Landmarks
+# Wikipedia main page Rotor's Landmarks
 
-To get the Rotor's Landmark dialogue do this:
+To get the Rotor's Landmark dialogue for Wikipedia main page do this:
 
 1. Turn on VoiceOver: `Command-F5`
 2. In safari, navigate to [en.wikipedia.org/wiki/Main_Page](https://en.wikipedia.org/wiki/Main_Page)
