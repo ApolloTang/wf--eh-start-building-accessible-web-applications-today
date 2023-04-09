@@ -25,8 +25,23 @@ This Landmarks are created with following HTML (`<herder>` tag only):
       <div>
         <div role="search">
           <form action="/w/index.php" id="searchform">
-            <input type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [⌃f]" accesskey="f" id="searchInput" autocomplete="off" />
-            <input id="mw-searchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+            <input
+              type="search"
+              name="search"
+              placeholder="Search Wikipedia"
+              aria-label="Search Wikipedia"
+              autocapitalize="sentences"
+              title="Search Wikipedia [⌃f]"
+              accesskey="f"
+              id="searchInput"
+              autocomplete="off"
+            />
+            <input
+              id="mw-searchButton"
+              type="submit"
+              name="fulltext"
+              title="Search Wikipedia for this text"
+              value="Search" />
           </form>
         </div>
 
@@ -38,10 +53,12 @@ This Landmarks are created with following HTML (`<herder>` tag only):
   </body>
 ```
 
+
 This code looks like this in Safari:
 
 ![rotor--landmark--reproduced-in-safari.png](./imgs/rotor--landmark--reproduced-in-safari.png)
 
-The reproduced rotor looks like this: 
+
+The reproduced rotor looks like this:
 
 ![rotor--landmark--header-only](./imgs/rotor--landmark--header-only.png)
