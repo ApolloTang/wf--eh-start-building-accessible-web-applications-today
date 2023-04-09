@@ -5,35 +5,33 @@
   <title></title>
 </head>
   <body>
-    <header class="mw-header">
+    <header>
       <nav aria-label="Site" role="navigation" >
-        <div id="vector-main-menu-dropdown" >
+        <div>
           <input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" aria-label="Main menu" />
-          <label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" aria-hidden="true" > <span>Main menu</span> </label>
-          <div id="vector-main-menu-unpinned-container">
-            <div id="vector-main-menu" >
-              <div>
-                <div>Main menu</div>
-                <button > move to sidebar </button> <button > hide </button>
-              </div>
-              <div id="p-navigation">
-                <div>Navigation</div>
-                <a href="" title="Visit the main page [⌃z]" accesskey="z" ><span>Main page</span></a >
-                <a href="" title="Guides to browsing Wikipedia" ><span>Contents</span></a >
-                <a href="" title="Articles related to current events" ><span>Current events</span></a >
-                <a href="" title="Visit a randomly selected article [⌃x]" accesskey="x" ><span>Random article</span></a >
-                <a href="" title="Learn about Wikipedia and how it works" ><span>About Wikipedia</span></a >
-                <a href="" title="How to contact Wikipedia" ><span>Contact us</span></a >
-                <a href="" title="Support us by donating to the Wikimedia Foundation" ><span>Donate</span></a >
-              </div>
-              <div id="p-interaction" >
-                <div>Contribute</div>
-                <a href="" title="Guidance on how to use and edit Wikipedia" ><span>Help</span></a >
-                <a href="" title="Learn how to edit Wikipedia" ><span>Learn to edit</span></a >
-                <a href="" title="The hub for editors" ><span>Community portal</span></a >
-                <a href="" title="A list of recent changes to Wikipedia [⌃r]" accesskey="r" ><span>Recent changes</span></a >
-                <a href="" title="Add images or other media for use on Wikipedia" ><span>Upload file</span></a >
-              </div>
+          <label for="vector-main-menu-dropdown-checkbox" aria-hidden="true" > <span>Main menu</span> </label>
+          <div>
+            <div>
+              <div>Main menu</div>
+              <button > move to sidebar </button> <button > hide </button>
+            </div>
+            <div>
+              <div>Navigation</div>
+              <a href="" title="Visit the main page [⌃z]" accesskey="z" ><span>Main page</span></a >
+              <a href="" title="Guides to browsing Wikipedia" ><span>Contents</span></a >
+              <a href="" title="Articles related to current events" ><span>Current events</span></a >
+              <a href="" title="Visit a randomly selected article [⌃x]" accesskey="x" ><span>Random article</span></a >
+              <a href="" title="Learn about Wikipedia and how it works" ><span>About Wikipedia</span></a >
+              <a href="" title="How to contact Wikipedia" ><span>Contact us</span></a >
+              <a href="" title="Support us by donating to the Wikimedia Foundation" ><span>Donate</span></a >
+            </div>
+            <div>
+              <div>Contribute</div>
+              <a href="" title="Guidance on how to use and edit Wikipedia" ><span>Help</span></a >
+              <a href="" title="Learn how to edit Wikipedia" ><span>Learn to edit</span></a >
+              <a href="" title="The hub for editors" ><span>Community portal</span></a >
+              <a href="" title="A list of recent changes to Wikipedia [⌃r]" accesskey="r" ><span>Recent changes</span></a >
+              <a href="" title="Add images or other media for use on Wikipedia" ><span>Upload file</span></a >
             </div>
           </div>
         </div>
@@ -44,11 +42,11 @@
         <span> <img alt="Wikipedia" src="wikipedia-wordmark-en.svg" /> <img alt="The Free Encyclopedia" src="wikipedia-tagline-en.svg" /> </span>
       </a>
 
-      <div class="vector-header-end">
-        <div id="p-search" role="search">
+      <div>
+        <div role="search">
           <a href="/wiki/Special:Search" title="Search Wikipedia [⌃f]" accesskey="f"> <span>Search</span> </a>
           <form action="/w/index.php" id="searchform">
-            <div id="simpleSearch" data-search-loc="header-moved" >
+            <div data-search-loc="header-moved" >
               <input type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [⌃f]" accesskey="f" id="searchInput" autocomplete="off" />
               <input type="hidden" name="title" value="Special:Search" />
               <input id="mw-searchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
@@ -57,28 +55,30 @@
           </form>
         </div>
 
-        <nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
-          <div id="p-vector-user-menu-overflow">
+        <nav aria-label="Personal tools" role="navigation" >
+          <div>
+            <!-- hidden on small screen -->
             <a href="" title="You are encouraged to create an account and log in; however, it is not mandatory" ><span>Create account</span></a >
             <a href="" title="You're encouraged to log in; however, it's not mandatory. [⌃o]" accesskey="o" ><span>Log in</span></a >
           </div>
 
-          <div id="vector-user-links-dropdown" title="Log in and more options" >
-            <input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" aria-label="Personal tools" />
-            <label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" aria-hidden="true" >
+          <div title="Log in and more options" >
+            <input type="checkbox" id="p-search" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" aria-label="Personal tools" />
+            <label for="vector-user-links-dropdown-checkbox" aria-hidden="true" >
               <span class="mw-ui-icon-ellipsis" ></span> <span>Personal tools</span>
             </label>
             <div>
-              <div id="p-personal" title="User menu" >
+              <div title="User menu" >
+                <!-- hidden on large screen -->
                 <a href="" title="You are encouraged to create an account and log in; however, it is not mandatory" ><span></span> <span>Create account</span></a >
                 <a href="" title="You're encouraged to log in; however, it's not mandatory. [⌃o]" accesskey="o" ><span></span> <span>Log in</span></a >
               </div>
 
-              <div id="p-user-menu-anon-editor" >
-                <div class="vector-menu-heading">
+              <div>
+                <div>
                   Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing" ><span>learn more</span></a >
                 </div>
-                <div class="vector-menu-content">
+                <div>
                   <a href="" title="A list of edits made from this IP address [⌃y]" accesskey="y" ><span>Contributions</span></a >
                   <a href="" title="Discussion about edits from this IP address [⌃n]" accesskey="n" ><span>Talk</span></a >
                 </div>
