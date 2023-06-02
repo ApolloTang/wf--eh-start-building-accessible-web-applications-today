@@ -63,7 +63,7 @@ But for `<div>`,  click handler only fire for click event, not on keydown event:
 
 So we need to explicitely add `onkeydown` handler:
 
-```html
+```HTML
 <div
   class="button"
 
@@ -72,7 +72,7 @@ So we need to explicitely add `onkeydown` handler:
   aria-label="Menu"
 
   onclick="console.log('div: click only (does not fire on keydown)')"
-  onkeydown="console.log('div: onkeydown')"   // <--- fixed, need to explicitely add `onkeydown` handler
+  onkeydown="console.log('div: onkeydown'); /* <----- fixed, need to explicitely add `onkeydown` handler */"
 >
   <i class="icon icon-menu"></i>
 </div>
